@@ -1,0 +1,6 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:fsfw-dresden/homepage-2.0-content
+[submodule "themes/fsfw-dresden"]
+	path = themes/fsfw-dresden
+	url = git@github.com:fsfw-dresden/homepage-2.0-theme
