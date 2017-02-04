@@ -34,6 +34,6 @@ DEFAULT_PAGINATION = 20
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = '/home/horazont/Projects/web/fsfw-dresden-2.0/themes/fsfw-dresden'
+THEME = 'themes/fsfw-dresden'
 
 STATIC_PATHS = ["img"]
