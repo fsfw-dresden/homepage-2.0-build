@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 20
 # (this is overridden by the publishconf.py used for publishing)
 RELATIVE_URLS = True
 
-THEME = '/home/horazont/Projects/web/fsfw-dresden-2.0/themes/fsfw-dresden'
+THEME = './themes/fsfw-dresden'
 
 STATIC_PATHS = ["img"]
 
