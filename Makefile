@@ -84,7 +84,7 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 install: publish
-	rsync -ra --delete --delete-after $(OUTPUTDIR)/ $(INSTALLTO)/
+	rsync -ra --delete --delete-after --exclude /media $(OUTPUTDIR)/ $(INSTALLTO)/
 
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)
