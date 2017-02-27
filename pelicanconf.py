@@ -13,6 +13,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = u'de'
+LOCALE = 'de_DE.UTF-8'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -54,4 +55,6 @@ YEAR_START = 2017
 YEAR_END = datetime.utcnow().year
 
 
+BUILD_TIME = datetime.utcnow()
 IS_STAGING = bool(os.environ.get("STAGING", ""))
+COMMIT_ID = os.environ.get("COMMIT", "")[:7]
