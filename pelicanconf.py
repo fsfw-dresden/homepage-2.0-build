@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'FSFW Dresden'
 SITENAME = u'FSFW Dresden'
@@ -32,8 +33,13 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# (this is overridden by the publishconf.py used for publishing)
+RELATIVE_URLS = True
 
 THEME = '/home/horazont/Projects/web/fsfw-dresden-2.0/themes/fsfw-dresden'
 
 STATIC_PATHS = ["img"]
+
+INDEX_SAVE_AS = 'blog.html'
+
+IS_STAGING = bool(os.environ.get("STAGING", ""))
