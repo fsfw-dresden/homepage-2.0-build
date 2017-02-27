@@ -10,8 +10,12 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://fsfw-dresden.de'
-RELATIVE_URLS = not IS_STAGING
+if IS_STAGING:
+    SITEURL = 'https://staging.fsfw-dresden.de/v2/' + os.environ["STAGING_URL_PART"]
+    RELATIVE_URLS = True
+else:
+    SITEURL = 'https://fsfw-dresden.de'
+    RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
