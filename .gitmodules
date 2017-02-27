@@ -4,3 +4,6 @@
 [submodule "themes/fsfw-dresden"]
 	path = themes/fsfw-dresden
 	url = https://github.com/fsfw-dresden/homepage-2.0-theme
+[submodule "pelican-plugins"]
+	path = pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins/

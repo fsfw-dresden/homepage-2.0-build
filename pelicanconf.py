@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
+from datetime import datetime
 
 AUTHOR = u'FSFW Dresden'
 SITENAME = u'FSFW Dresden'
@@ -40,6 +41,17 @@ THEME = './themes/fsfw-dresden'
 
 STATIC_PATHS = ["img"]
 
+PLUGIN_PATHS = ['pelican-plugins', '.']
+PLUGINS = ['filetime_from_git', 'open_graph', 'neighbors']
+
 INDEX_SAVE_AS = 'blog.html'
+
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+
+YEAR_START = 2017
+YEAR_END = datetime.utcnow().year
+
 
 IS_STAGING = bool(os.environ.get("STAGING", ""))
